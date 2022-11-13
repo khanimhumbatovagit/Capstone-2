@@ -9,7 +9,61 @@
 </head>
 
 <body>
+    <input type="radio" name="test">
+    <label for="test">by location</label>
+    <input type="radio" name="test">
+    <label for="test">by park type</label>
 
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <script>
+        const parkTypesArray = [
+            "National Park",
+            "National Monument",
+            "Recreation Area",
+            "Scenic Trail",
+            "Battlefield",
+            "Historic",
+            "Memorial",
+            "Preserve",
+            "Island",
+            "River",
+            "Seashore",
+            "Trail",
+            "Parkway"
+        ]
+        console.log(parkTypesArray);
+        let myUl = document.getElementsByTagName("li")
+        let myArray =[myUl];
+        console.log(myArray);
+      
+        for (let type = 0; type < parkTypesArray.length; type++) {
+            const element = parkTypesArray[type];
+            console.log(element);
+        }
+        for (let myLi = 0; myLi < myArray.length; myLi++) {
+            const element2 = myArray[myLi];
+            console.log(element2);
+            
+        }
+
+        
+        
+    </script>
 </body>
 
 </html>
