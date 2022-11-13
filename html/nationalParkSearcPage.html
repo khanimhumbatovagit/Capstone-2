@@ -6,64 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Park Searc Page</title>
+
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+    <style>
+        body {
+            background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+            background: linear-gradient(to right, #25c481, #25b7c4);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        section {
+            margin: 50px;
+        }
+    </style>
+
+    <input type="radio" name="test">
+    <label for="test">All</label>
     <input type="radio" name="test">
     <label for="test">by location</label>
-    <input type="radio" name="test">
+    <input type="radio" name="test" id="mypark">
     <label for="test">by park type</label>
 
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+    <select name="myLocation" id="myLocation" onChange="getLocation()"></select>
+
+    <button id="mybtn">Get Value</button>
+    <ul id="myList" style="display: flex; visibility: hidden;">
     </ul>
+    <table id="table" border="1">
+        <thead>
+            <th>LocationID</th>
+            <th>LocationName</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>ZipCode</th>
+            <th>Phone</th>
+            <th>Fax</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>coordinates</th>
+            <th>type</th>
+        </thead>
+        <tbody id="tableBody">
 
-    <script>
-        const parkTypesArray = [
-            "National Park",
-            "National Monument",
-            "Recreation Area",
-            "Scenic Trail",
-            "Battlefield",
-            "Historic",
-            "Memorial",
-            "Preserve",
-            "Island",
-            "River",
-            "Seashore",
-            "Trail",
-            "Parkway"
-        ]
-        console.log(parkTypesArray);
-        let myUl = document.getElementsByTagName("li")
-        let myArray =[myUl];
-        console.log(myArray);
-      
-        for (let type = 0; type < parkTypesArray.length; type++) {
-            const element = parkTypesArray[type];
-            console.log(element);
-        }
-        for (let myLi = 0; myLi < myArray.length; myLi++) {
-            const element2 = myArray[myLi];
-            console.log(element2);
-            
-        }
+        </tbody>
+    </table>
 
-        
-        
-    </script>
+    <style>
+        ul li {
+            list-style-type: none;
+            margin: 7px;
+        }
+    </style>
+    <script src="/scripts/locationData.js"></script> 
+    <script src="/scripts/nationalParkData.js"></script>
+
+    <script src="/scripts/parkTypeData.js"></script>
+    <script src="/scripts/park.js"></script>
+
+
+
+
 </body>
 
 </html>

@@ -6858,3 +6858,5 @@ const nationalParksArray = [
     }
     }
 ]
+
+console.log( nationalParksArray);
