@@ -16,7 +16,7 @@
             <h2 class="logo">Travel</h2>
             <div class="toggle"></div>
         </header>
-        <video src="production ID_5040711.mp4" muted loop autoplay></video>
+        <video src="/videos/production ID_5060883.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <div class="text">
             <h2>Never Stop To </h2>
@@ -44,6 +44,15 @@
     </div>
 
 
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>
