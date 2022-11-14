@@ -3,13 +3,28 @@ var namesInputs = document.getElementsByName("test");
 
 var btn = document.getElementById("mybtn");
 btn.addEventListener("click", function () {
-  if (namesInputs[0].checked) {
-    GetAllData();
-    //    list.style.visibility="hidden";
-  } else if (namesInputs[1].checked) {
-    // list.style.visibility="visible";
-  }
+ 
+
+  // let all = document.getElementById("all");
+  // let state = document.getElementById("myLocation");
+  // console.log(state)
+  // let searchType = document.getElementById("type");
+  // console.log(searchType);
+  // if (all.checked) {
+  //   state.style.hidden = true;
+  //   searchType.style.hidden = true;
+  // }
 });
+
+// function fun() {
+//   let all = document.getElementById("all");
+//   let state = document.getElementById("myLocation");
+//   let searchType = document.getElementById("type");
+//   if (all.checked) {
+//     state.style.visibility = "hidden";
+//     searchType.style.visibility = "hidden";
+//   }
+// }
 
 //for parkType
 
@@ -82,8 +97,20 @@ function GetAllData() {
     tr.appendChild(td12);
 
     table.appendChild(tr);
+
+    
   }
+
+  
 }
+
+var mybtn2 = document.getElementById("mybtn");
+mybtn2.addEventListener("click", function () {
+  var mylocated = document.getElementById("myLocation");
+  var mytyped = document.getElementById("type");
+  mylocated.style.visibility = "hidden";
+  mytyped.style.visibility = "hidden";
+});
 
 //----------------------searc for location----------------------------//
 
@@ -250,3 +277,19 @@ function getType() {
 
   GetAllFilteredType(value);
 }
+
+
+//-------------//////--------------------------
+
+var mybtn2 = document.getElementById("mybtn");
+mybtn2.addEventListener("click", function () {
+  var mylocated = document.getElementById("myLocation");
+  var mytyped = document.getElementById("type");
+  mylocated.style.visibility = "hidden";
+  mytyped.style.visibility = "hidden";
+});
+
+
+
+
+

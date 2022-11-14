@@ -13,8 +13,8 @@
 <body>
     <style>
         body {
-            background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-            background: linear-gradient(to right, #25c481, #25b7c4);
+          
+            
             font-family: 'Roboto', sans-serif;
         }
 
@@ -23,19 +23,16 @@
         }
     </style>
 
-    <input type="radio" name="test">
-    <label for="test">All</label>
-    <input type="radio" name="test">
-    <label for="test">by location</label>
-    <input type="radio" name="test" id="mypark">
-    <label for="test">by park type</label>
 
-    <select name="myLocation" id="myLocation" onChange="getLocation()"></select>
+    
+
+    <select name="myLocation" id="myLocation" onChange="getLocation()" ></select>
     <select name="type" id="type" onChange="getType()"></select>
+
     <button id="mybtn">Get Value</button>
     <ul id="myList" style="display: flex; visibility: hidden;">
     </ul>
-    <table id="table" border="1">
+    <table id="table" border="1" style="width: 70%; margin: 5px; padding: 10px;">
         <thead>
             <th>LocationID</th>
             <th>LocationName</th>
