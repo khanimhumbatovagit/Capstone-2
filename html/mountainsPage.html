@@ -9,7 +9,200 @@
 </head>
 
 <body>
+    <style>
+        * {
 
+            font-family: 'Poppins', sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            background-color: #323e55;
+
+            color: white;
+
+            display: flex;
+
+            min-height: 100vh;
+
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+        .card {
+
+            height: 30rem;
+
+            width: 30rem;
+
+            overflow: hidden;
+
+            position: relative;
+
+            cursor: pointer;
+
+            border-radius: 20px;
+
+        }
+
+        .card img {
+
+            height: 100%;
+
+            width: 100%;
+
+        }
+
+        .card:hover .details {
+
+            opacity: 1;
+
+            height: 100%;
+
+        }
+
+        .details {
+
+            position: absolute;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            bottom: 0;
+
+            width: 100%;
+
+            height: 0%;
+
+            background: rgba(0, 0, 0, 0.7);
+
+            opacity: 0;
+
+            transition: 0.5s ease;
+
+        }
+
+        .details h3 {
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+        }
+
+        .details p {
+
+            margin: 2px 0;
+
+            font-size: 12px;
+
+            font-style: italic;
+
+        }
+
+      
+        
+    </style>
+<!-- 
+    <div class="card" style="margin: 5px;">
+
+        <img src="/images/Adams-StoryImage_2.jpg" alt="tree" />
+        
+
+        <div class="details">
+
+            
+
+            <h3>jjj</h3>
+
+            <p>Lorem ipsum dolor sit</p>
+
+            <ul class="social-icons">
+
+                <li>
+
+                    <a href="#"></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div> -->
+    <select name="dropMountain" id="dropMountain" onchange="getName ()"></select>
+
+    <div class="card" style="margin: 5px;">
+
+        <img src="" alt="tree" />
+        
+
+        <div class="details">
+
+            
+
+            <h3>"Mt. Adams"</h3>
+
+            <p>
+                elevation: 5799,
+                effort: "Strenuous",</p>
+                <p>"Mt. Adams (5,799') is the second highest peak in New England, offering spectacular views across the Great Gulf and King Ravine.",</p>
+
+            <!-- <ul class="social-icons">
+
+                <li>
+
+                    <a href="#"></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"></a>
+
+                </li>
+
+                <li>
+
+                    <a href="#"></a>
+
+                </li>
+
+            </ul> -->
+
+        </div>
+
+    </div>
+
+<script src="/scripts/mountain.js"></script>
+<script src="/scripts/mountainData.js"></script>
+<script src="/scripts/mountainsArray.js"></script>
 </body>
 
 </html>

@@ -13,8 +13,8 @@
 <body>
     <style>
         body {
-          
-            
+
+
             font-family: 'Roboto', sans-serif;
         }
 
@@ -22,35 +22,40 @@
             margin: 50px;
         }
     </style>
+    <div class="container"
+        style="min-width: 144%; background-color: rgb(166, 40, 40); min-height: 600px; margin: auto; ">
+        <input type="radio" name="test" id="all">
+        <label for="test">All</label>
 
+        <div class="select" style="display: inline; margin: auto;">
+            <select name="myLocation" id="myLocation" onChange="getLocation()"></select>
+            <select name="type" id="type" onChange="getType()"></select>
+        </div>
 
-    
+        <button id="mybtn">Get Value</button>
+        <ul id="myList" style="display: flex; visibility: hidden;">
+        </ul>
+        <table id="table" border="1" style="width: 70%; margin: 5px; padding: 20px;">
+            <thead>
+                <th>LocationID</th>
+                <th>LocationName</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>ZipCode</th>
+                <th>Phone</th>
+                <th>Fax</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>coordinates</th>
+                <th>type</th>
+                <th>Visit</th>
+            </thead>
+            <tbody id="tableBody">
 
-    <select name="myLocation" id="myLocation" onChange="getLocation()" ></select>
-    <select name="type" id="type" onChange="getType()"></select>
-
-    <button id="mybtn">Get Value</button>
-    <ul id="myList" style="display: flex; visibility: hidden;">
-    </ul>
-    <table id="table" border="1" style="width: 70%; margin: 5px; padding: 10px;">
-        <thead>
-            <th>LocationID</th>
-            <th>LocationName</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>ZipCode</th>
-            <th>Phone</th>
-            <th>Fax</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>coordinates</th>
-            <th>type</th>
-        </thead>
-        <tbody id="tableBody">
-
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 
     <style>
         ul li {
@@ -58,7 +63,7 @@
             margin: 7px;
         }
     </style>
-    <script src="/scripts/locationData.js"></script> 
+    <script src="/scripts/locationData.js"></script>
     <script src="/scripts/nationalParkData.js"></script>
 
     <script src="/scripts/parkTypeData.js"></script>
