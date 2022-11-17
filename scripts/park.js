@@ -3,12 +3,12 @@ var namesInputs = document.getElementsByName("test");
 
 var btn = document.getElementById("mybtn");
 btn.addEventListener("click", function () {
-  if (namesInputs[0].checked) {
+  // if (namesInputs[0].checked) {
     GetAllData();
     //    list.style.visibility="hidden";
-  } else if (namesInputs[1].checked) {
-    // list.style.visibility="visible";
-  }
+  // } else if (namesInputs[1].checked) {
+  //   // list.style.visibility="visible";
+  // }
 
   // let all = document.getElementById("all");
   // let state = document.getElementById("myLocation");
@@ -53,9 +53,7 @@ function GetAllData() {
   for (let nationalPark of nationalParksArray) {
     let tr = document.createElement("tr");
 
-    let td1 = document.createElement("td");
-    td1.textContent = nationalPark.LocationID;
-    tr.appendChild(td1);
+    
 
     let td2 = document.createElement("td");
     td2.textContent = nationalPark.LocationName;
@@ -93,17 +91,13 @@ function GetAllData() {
     td10.textContent = nationalPark.Longitude;
     tr.appendChild(td10);
 
-    let td11 = document.createElement("td");
-    td11.textContent = nationalPark.Location.coordinates;
-    tr.appendChild(td11);
+   
 
     let td12 = document.createElement("td");
     td12.textContent = nationalPark.Location.type;
     tr.appendChild(td12);
      
-    let td13 = document.createElement("td");
-    td13.textContent = nationalPark.Visit;
-    tr.appendChild(td13);
+  
 
     table.appendChild(tr);
 
@@ -130,9 +124,7 @@ function GetAllFilteredData(state) {
   for (let nationalPark of filteredArray) {
     let tr = document.createElement("tr");
 
-    let td1 = document.createElement("td");
-    td1.textContent = nationalPark.LocationID;
-    tr.appendChild(td1);
+    
 
     let td2 = document.createElement("td");
     td2.textContent = nationalPark.LocationName;
@@ -170,9 +162,7 @@ function GetAllFilteredData(state) {
     td10.textContent = nationalPark.Longitude;
     tr.appendChild(td10);
 
-    let td11 = document.createElement("td");
-    td11.textContent = nationalPark.Location.coordinates;
-    tr.appendChild(td11);
+   
 
     let td12 = document.createElement("td");
     td12.textContent = nationalPark.Location.type;
@@ -215,9 +205,7 @@ function GetAllFilteredType(type) {
   for (let nationalPark of filteredType) {
     let tr = document.createElement("tr");
 
-    let td1 = document.createElement("td");
-    td1.textContent = nationalPark.LocationID;
-    tr.appendChild(td1);
+    
 
     let td2 = document.createElement("td");
     td2.textContent = nationalPark.LocationName;
@@ -255,9 +243,7 @@ function GetAllFilteredType(type) {
     td10.textContent = nationalPark.Longitude;
     tr.appendChild(td10);
 
-    let td11 = document.createElement("td");
-    td11.textContent = nationalPark.Location.coordinates;
-    tr.appendChild(td11);
+ 
 
     let td12 = document.createElement("td");
     td12.textContent = nationalPark.Location.type;
