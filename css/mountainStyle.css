@@ -29,6 +29,47 @@ body {
     background-size: cover;
 }
 
+select {
+  /* margin: 40px 0px 0px 4; */
+  margin-top: 100px;
+  width: 160px;
+  ;
+  font-size: 14px;
+  border: 1px solid #eee;
+  height: 30px;
+ 
+  appearance: none;
+  background:  #fff;
+
+
+}
+
+select{
+  background-color: antiquewhite;
+ height: 50px;
+
+  width: 15rem;
+
+  overflow: auto;
+/* 
+  position: relative;
+
+  cursor: pointer; */
+
+  border-radius: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+  margin-top: 200px;
+
+
+  
+}
+
+
 /* ------------nav bar----------------------- */
 
 .navbar {
@@ -77,9 +118,9 @@ body {
 
 .card {
 
-    height: 14rem;
+    height: 15rem;
 
-    width: 14rem;
+    width: 15rem;
 
     overflow: hidden;
 
@@ -87,7 +128,7 @@ body {
 
     cursor: pointer;
 
-    border-radius: 20px;
+    border-radius: 30px;
 
     display: flex;
 
@@ -95,6 +136,10 @@ body {
 
     align-items: right;
 
+  
+    margin-left: 250px;
+  
+    margin-bottom: 300px;
 
 }
 
