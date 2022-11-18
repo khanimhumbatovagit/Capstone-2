@@ -22,7 +22,7 @@ html {
   background-repeat: no-repeat;
   /* 
      fixed = parralax
-     scroll = normal
+     scroll = normal scroll
     */
   background-attachment: fixed;
 }
@@ -96,8 +96,11 @@ html {
 @media (max-width: 568px) {
    
   .pimg1,
-  .pimg2,
-  .pimg3 {
+  .hiking,
+  .running,
+  .biking,
+  .camping,
+  .golf {
     background-attachment: scroll;
   }
 }
