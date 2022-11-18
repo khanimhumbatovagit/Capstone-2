@@ -24,13 +24,62 @@ body {
 
     justify-content: center;
 
+    font-family: sans-serif;
+    background: linear-gradient(104deg);
+    background-size: cover;
 }
+
+/* ------------nav bar----------------------- */
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    cursor: pointer;
+    color: #eee;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  /* ------------------------------------------------------------------ */
+
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#cde1e795, rgba(234, 150, 150, 0.7)),
+    url(/images/mountain/mountain.png);
+     
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+  }
 
 .card {
 
-    height: 30rem;
+    height: 14rem;
 
-    width: 30rem;
+    width: 14rem;
 
     overflow: hidden;
 
@@ -39,6 +88,13 @@ body {
     cursor: pointer;
 
     border-radius: 20px;
+
+    display: flex;
+
+    justify-content: right;
+
+    align-items: right;
+
 
 }
 

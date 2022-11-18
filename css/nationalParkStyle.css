@@ -1,14 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(104deg);
+  background-size: cover;
+}
+
 .container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/images/NParkSearchPage/background.jpg);
+  background-image: linear-gradient(rgba(45, 74, 84, 0.585), rgba(76, 50, 50, 0.7)),
+    url(/images/NParkSearchPage/pexels-josh-hild-2422463.jpg);
   background-position: center;
   background-size: cover;
   padding-left: 8%;
   padding-right: 8%;
   box-sizing: border-box;
 }
+
+/* ------------nav bar----------------------- */
 
 .navbar {
   height: 12%;
@@ -37,10 +51,8 @@ nav ul li a {
   color: #fff;
   font-size: 13px;
 }
+/* ---------------------------------------------------------------------------- */
 
-body {
-  font-family: "Roboto", sans-serif;
-}
 
 .containerButton {
   width: 400px;
@@ -52,7 +64,7 @@ body {
   align-items: center;
 }
 button {
-  background-color: #dc005a;
+  background-color: #76b9d5;
   color: white;
   font-size: 20px;
 }
@@ -76,27 +88,15 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(https://.com/22s26jw9) 100% / 15% no-repeat #3c1b29;
+  background: url(https://.com/22s26jw9) 100% / 15% no-repeat #76b9d5;
   align-items: center;
   justify-items: center;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  background: linear-gradient(104deg);
-  background-size: cover;
 }
 
 .table-container {
   justify-content: center;
   margin: 20vh auto;
-  width: 1000px;
+  width: 800px;
   background-color: #fff;
   border-radius: 10px;
   padding: 5px;
@@ -110,6 +110,7 @@ body {
   position: sticky;
   top: 0;
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -140,7 +141,7 @@ tr:nth-of-type(even) {
 }
 
 th {
-  background-color: #dc005a;
+  background-color: #76b9d5;
   color: #fff;
   font-weight: 300;
   font-size: 15px;
@@ -170,19 +171,7 @@ th {
   border-radius: 0.25em;
 }
 
-.label-success {
-  background-color: #5cb85c;
-}
-
-.label-warning {
-  background-color: #f0ad4e;
-}
-
-.label-danger {
-  background-color: #d9534f;
-}
-
-.btn {
+.mybtn {
   color: #fff;
   background-color: #37bc9b;
   font-size: 13px;
@@ -197,12 +186,25 @@ th {
   background-color: #2e9c81;
 }
 
+/* -------------------------------------for to make responsive------------------------------------------- */
 
 @media only screen and (max-width: 768px),
   (min-device-width: 768px) and (max-device-width: 992px) {
   .table-container {
     width: 95%;
     background: transparent;
+  }
+ html{
+    width: 100%;
+    height: max-content;
+    background: transparent;
+  }
+
+  #mybtn {
+    width: 30%;
+    
+    margin-right: 300px;
+    
   }
 
   table,
