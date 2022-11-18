@@ -1,82 +1,168 @@
-body, html{
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
-
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
 
-.pimg1, .pimg2, .pimg3{
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* 
+.pimg1,
+.hiking,
+.running,
+.camping,
+.biking,
+.golf{
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 
      fixed = parralax
      scroll = normal
     */
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 
-.pimg1{
-   background-image: url('../images/mountain/pexels-eberhard-grossgasteiger-1428277.jpg'); 
-   min-height: 100%;
+.pimg1 {
+  background-image: url("../images/mountain/pexels-eberhard-grossgasteiger-673020.jpg");
+  min-height: 100%;
 }
 
-.pimg2{
-    background-image: url('../images/mountain/pexels-eberhard-grossgasteiger-2098427.jpg'); 
-    min-height: 400px;
+.hiking {
+  background-image: url("../images/more/hiking.jpg");
+  min-height: 400px;
+}
+
+.running {
+  background-image: url("../images/more/running.jpg");
+  min-height: 400px;
+}
+
+.camping {
+   background-image: url("../images/more/camping.jpg");
+   min-height: 400px;
  }
 
- .pimg3{
-    background-image: url('../images/mountain/pexels-eberhard-grossgasteiger-673020.jpg'); 
-    min-height: 400px;
+ .biking {
+   background-image: url("../images/more/biking.jpg");
+   min-height: 400px;
  }
 
- .section{
-    text-align: center;
-    padding: 50px 80px;
+ .golf {
+   background-image: url("../images/more/golf.jpg");
+   min-height: 400px;
  }
 
- .section-light{
-    background-color: #f4f4f4;
-    color: #666;
- }
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
 
- .section-dark{
-    background-color: #282e34;
-    color: #ddd;
- }
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
 
- .ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
- }
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
 
- .ptext .border{
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border .trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+   
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+}
+
+/* -------------------------------------- */
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+
+  list-style: none;
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  color: #eee;
+}
 
 
- }
 
- .ptext .border .trans{
-    background-color: transparent;
- }
+.social {
+   position: absolute;
+   z-index: 10;
+   bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
-@media(max-width: 568px){
-    .pimg1, .pimg2, .pimg3{
-        background-attachment: scroll;
-    }
+.social li {
+   list-style: none;
+}
+
+.social li a {
+   display: inline-block;
+   margin-right: 20px;
+   filter: invert(1);
+   transform: scale(0.5);
+   transition: 0.5s;
+}
+
+.social li a:hover {
+   transform: scale(0.5) translateY(-15px);
 }

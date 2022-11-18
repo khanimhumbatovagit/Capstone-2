@@ -106,6 +106,12 @@ function GetAllData() {
 
   
 }
+// let container = document.getElementsByTagName("fieldset");
+
+// container.onclick = function (){
+//   container.style.display = "none";
+// }
+
 
 // var mybtn2 = document.getElementById("mybtn");
 // mybtn2.addEventListener("click", function () {
